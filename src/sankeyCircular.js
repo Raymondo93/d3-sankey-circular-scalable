@@ -59,7 +59,7 @@ import findCircuits from "elementary-circuits-directed-graph";
   // Some constants for circular link calculations
   var verticalMargin = 25;
   var baseRadius = 10;
-  var scale = 0.3; //Possibly let user control this, although anything over 0.5 starts to get too cramped
+  //var scale = 0.3; //Possibly let user control this, although anything over 0.5 starts to get too cramped
 
   export default function() {
     // Set the default values
@@ -68,6 +68,7 @@ import findCircuits from "elementary-circuits-directed-graph";
       x1 = 1,
       y1 = 1, // extent
       dx = 24, // nodeWidth
+        scale = 1;
       py, // nodePadding, for vertical postioning
       id = defaultId,
       align = justify,
@@ -185,6 +186,10 @@ import findCircuits from "elementary-circuits-directed-graph";
 
     sankeyCircular.nodePadding = function (_) {
       return arguments.length ? ((py = +_), sankeyCircular) : py
+    }
+
+    sankeyCircular.scale = function (_) {
+      return arguments.length ? ((scale = +_), sankeyCircular) : scale
     }
 
     sankeyCircular.nodes = function (_) {

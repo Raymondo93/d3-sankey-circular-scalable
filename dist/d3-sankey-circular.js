@@ -97,7 +97,7 @@
   // Some constants for circular link calculations
   var verticalMargin = 25;
   var baseRadius = 10;
-  var scale = 0.3; //Possibly let user control this, although anything over 0.5 starts to get too cramped
+  //var scale = 0.3; //Possibly let user control this, although anything over 0.5 starts to get too cramped
 
   function sankeyCircular () {
     // Set the default values
@@ -108,17 +108,8 @@
         // extent
     dx = 24,
         // nodeWidth
-    py,
-        // nodePadding, for vertical postioning
-    id = defaultId,
-        align = justify,
-        nodes = defaultNodes,
-        links = defaultLinks,
-        iterations = 32,
-        circularLinkGap = 2,
-        paddingRatio,
-        sortNodes = null,
-        nodeSort = null;
+    scale = 1;
+    id = defaultId, align = justify, nodes = defaultNodes, links = defaultLinks, iterations = 32, circularLinkGap = 2, sortNodes = null, nodeSort = null;
 
     function sankeyCircular() {
       var graph = {
@@ -219,6 +210,10 @@
 
     sankeyCircular.nodePadding = function (_) {
       return arguments.length ? (py = +_, sankeyCircular) : py;
+    };
+
+    sankeyCircular.scale = function (_) {
+      return arguments.length ? (scale = +_, sankeyCircular) : scale;
     };
 
     sankeyCircular.nodes = function (_) {
