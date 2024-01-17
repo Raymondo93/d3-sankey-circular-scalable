@@ -1,12 +1,12 @@
 {
-  "name": "d3-sankey-circular",
+  "name": "d3-sankey-circular-scalable",
   "version": "0.34.0",
-  "description": "D3 sankey with circular links",
-  "author": "Tom Shanley",
+  "description": "D3 sankey with circular links and can scale",
+  "authors": "Raymond de Bruine",
   "license": "MIT",
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/tomshanley/d3-sankey-circular.git"
+    "url": "git+https://github.com/Raymondo93/d3-sankey-circular-scalable.git"
   },
   "main": "dist/d3-sankey-circular.js",
   "module": "dist/d3-sankey-circular.es.js",
@@ -59,7 +59,7 @@
     "d3"
   ],
   "bugs": {
-    "url": "https://github.com/tomshanley/d3-sankey-circular/issues"
+    "url": "https://github.com/Raymondo93/d3-sankey-circular-scalable/issues"
   },
-  "homepage": "https://github.com/tomshanley/d3-sankey-circular#readme"
+  "homepage": "https://github.com/Raymondo93/d3-sankey-circular-scalable#readme"
 }
