@@ -68,7 +68,7 @@ import findCircuits from "elementary-circuits-directed-graph";
       x1 = 1,
       y1 = 1, // extent
       dx = 24, // nodeWidth
-        scale = 1;
+      scale = 1,
       py, // nodePadding, for vertical postioning
       id = defaultId,
       align = justify,
